@@ -4,6 +4,7 @@
         <!-- creazione menu con logo a sinistra e menu a destra -->
         <div class="ms_container">
             <div class="logo-header">
+                <img class="h-100 w-100" src="../assets/bakery-logo.jpg" alt="">
                 
             </div>
             <div class="menu-header">
@@ -86,7 +87,6 @@ header{
                         float: left;
                         width: 15%;
                         height: 100%;
-                        background-color: black;
                     }
                     .menu-header{
                         float: right;
@@ -137,8 +137,11 @@ header{
                 .right-jumbotron{
                     width: 77%;
                     float: right;
-                    background-color: black;
+                    background-image: url('../assets/pexels-maria-orlova-4916562.jpg');
+                    background-size: cover;
+                    background-position: bottom;
                     height: 100%;
+                    border-radius: 10px;
                 }
             }
 }

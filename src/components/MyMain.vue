@@ -23,9 +23,7 @@
             <span>CORPORATE E WEDDINGS</span>
             <p>Baking Special Moments</p>
         </div>
-        <div class="img-second-part">
-          <img class="w-100" src="../assets/hover-img1.png" alt="">
-        </div>
+        <img class="w-100" src="../assets/hover-img1.png" alt="">
   </div>
        <!-- fine seconda parte main statico -->
        <!-- inizio terza parte main statico -->
@@ -74,7 +72,7 @@
           </div>
             <!-- inizio quinta parte main statico -->
           <div class="ms_container-80 ms_container mb-3">
-            <div class="img-left-quinta-parte background-img-bread h-100 p-5">
+            <div class="img-left-quinta-parte background-img-bread-3 h-100 p-5">
                 <div class="top-text-01">
                   <div class="text-left">
                     <p>Tell us what you have in ming</p>
@@ -98,7 +96,7 @@
           </div>
               <!--fine quinta parte main statico -->
               <!-- inizio sesta parte main statico -->
-          <div class="ms_container-80 background-img-bread-2 mb-3 p-5 text-white">
+          <div class="ms_container-80 background-img-bread-2 p-5 text-white">
                <div class="top-text-01">
                   <div class="text-left">
                     <p>Tell us what you have in ming</p>
@@ -113,6 +111,96 @@
                 </div>
           </div>
           <!-- fine sesta parte main statico -->
+          <!-- inizio settima parte main statico -->
+          <div class="ms_container-80-2 text-center mt-5 py-5">
+            <span>LOCATIONS</span>
+            <p class="pt-5">Visit our Bakeries</p>
+            <div class="ms_container">
+              <div class="img-left">
+                <img class="w-100" src="../assets/pexels-daria-shevtsova-1070946.jpg" alt="">
+                <p class="py-4">New York</p>
+                <div class="px-5 w-100 d-flex align-items-center justify-content-between" >
+                  <div>
+                    <span>wewe</span>
+                    <p>wewe</p>
+                  </div>
+                  <div>
+                    <span>wewe</span>
+                    <p>wewe</p>
+                  </div>
+                  <div>
+                    <span>wewe</span>
+                    <p>wewe</p>
+                  </div>
+                </div>
+
+                </div>
+                <div class="img-right">
+                  <img class="w-100" src="../assets/pexels-annam-w-1047458.jpg" alt="">
+                   <p class="py-4">New York</p>
+                <div class="px-5 w-100 d-flex align-items-center justify-content-between" >
+                    <div>
+                      <span>wewe</span>
+                      <p>wewe</p>
+                    </div>
+                    <div>
+                      <span>wewe</span>
+                      <p>wewe</p>
+                    </div>
+                    <div>
+                      <span>wewe</span>
+                      <p>wewe</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- fine settima parte main statico -->
+          <!-- inizio ottava parte main statico -->
+           <div class="ms_container-80 ms-container mt-5">
+            <div class="img-top-part">
+              <div class="ms_float-23">
+                <img class="w-100" src="../assets/img-ottava-parte/pexels-anna-shvets-5964505.jpg" alt="">
+
+              </div>
+              <div class="ms_float-46 d-flex flex-column justify-content-center align-items-center">
+                <span></span>
+                <p>wewe</p>
+                <button></button>
+
+              </div>
+              <div class="ms_float-23">
+                <img class="w-100" src="../assets/img-ottava-parte/pexels-katerina-holmes-5910791.jpg" alt="">
+              </div>
+            </div>
+            <div class="img-bottom-part">
+              <div class="ms_float-23">
+                <img class="w-100" src="../assets/img-ottava-parte/pexels-meruyert-gonullu-6152263.jpg" alt="">
+              </div>
+             <div class="ms_float-23">
+               <img class="w-100" src="../assets/img-ottava-parte/pexels-elle-hughes-5764066.jpg" alt="">
+              </div>
+              <div class="ms_float-23">
+                <img class="w-100" src="../assets/img-ottava-parte/pexels-gustavo-fring-7447284.jpg" alt="">
+              </div>
+              <div class="ms_float-23">
+                <img class="w-100" src="../assets/img-ottava-parte/pexels-tara-winstead-6479556.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <!-- fine ottava parte main statico -->
+          <!-- inizio nona parte main statico -->
+          <div class="background-img-bread-3 mt-5 mb-5">
+            <div class="w-50 h-100 d-flex flex-column justify-content-center align-items-center">
+              <span>wewe</span>
+              <p>wewe</p>
+              <button>wewe</button>
+            </div>
+          </div>
+          <!-- fine nona parte main statico -->
+
   </main>
 </template>
 
@@ -183,6 +271,7 @@ export default {
        margin: 20px 0px;
     }
   }
+
 
 
    /*fine seconda parte del main in maniera statica */
@@ -275,6 +364,38 @@ export default {
 
      /* fine quinta parte main statica */
 
+     /* inizio settima parte main statica */
+     .img-left{
+       width: 50%;
+       float: left;
+     }
+     .img-right{
+       width: 50%;
+       float: left;
+     }
+     /* fine settima parte main statica */
+     /* inizio ottava parte main statico */
+
+     .ms_float-23{
+       float: left;
+       width: calc(100% / 4 - 20px);
+       margin: 0px 10px;
+     }
+     .ms_float-46{
+       width: calc(100% / 2 - 20px);
+       margin: 0px 10px;
+       float: left;
+       background-color: rgb(238, 231, 231);
+       height: 96%;
+     }
+     .img-top-part{
+       height: 250px;
+     }
+
+     /* fine ottava parte main statico */
+     /* inizio nona parte main statico */
+     /* fine nona parte main statico */
+
    /* inizio generale del main */
 
   .ms_container::after{
@@ -292,6 +413,10 @@ export default {
     height: 500px;
     margin: 0 auto;
   }
+  .ms_container-80-2{
+    width: 80%;
+    margin: 0 auto;
+  }
   .background-img-bread{
     background-image: url('../assets/pexels-karolina-grabowska-4495761.jpg');
     background-size: cover;
@@ -300,5 +425,16 @@ export default {
     background-image: url('../assets/pexels-pixabay-209196.jpg');
     background-size: cover;
     background-position-y: -7em;
+  }
+  .background-img-bread-3{
+    background-image: url('../assets/pexels-antoni-shkraba-5852247.jpg');
+    background-size: cover;
+    background-position-y: -7em;
+  }
+  .background-img-bread-3{
+    background-image: url('../assets/pexels-marta-dzedyshko-7693958.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
   }
 </style>
