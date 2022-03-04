@@ -18,7 +18,7 @@
         </div>
         <div class="ms-jumbotron">
             <div class="left-jumbotron">
-                <p>FRESH E TASTY BAKERY EVERY DAY</p>
+                <p class="first-p">FRESH E TASTY BAKERY EVERY DAY</p>
                 <h1>The Perfect Fresh Bread</h1>
                 <p>Cras consequa lectus vestibulum tortor pulivanr, quis euismod nisl varius. Aliquam erat volutpat.
                  Nulllam quis sagittis nibh ac nulla id orci tempor</p>
@@ -104,6 +104,7 @@ header{
                                     text-decoration: none;
                                     color: $colorMenuHeader;
                                     padding-bottom: 5px ;
+                                    font-weight: bold;
                                     
                                 }
                                 
@@ -125,13 +126,19 @@ header{
                             border: 1px solid white;
                             border-radius: 8px;
                             font-size: 20px;
+                            font-weight: bold 700;
                             color: $colorTitolo;
                         }
                         h1{
                             color: $colorTitolo;
+                            font-weight: bold;
                         }
                         p{
-                            color : $colorTitolo;
+                            color : $colorParagrafi;
+                        }
+                        .first-p{
+                            font-size: 13px;
+                            font-weight: bold 700;
                         }
                 }
                 .right-jumbotron{

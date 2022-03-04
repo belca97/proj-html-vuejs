@@ -18,7 +18,7 @@
     </div>
     <!-- fine prima parte main statico -->
       <!-- inizio seconda parte main in maniera statica -->
-  <div class="container ms_container ">
+  <div class="container ms_container mt-5">
         <div class="text-center text-second-part">
             <span>CORPORATE E WEDDINGS</span>
             <p>Baking Special Moments</p>
@@ -27,11 +27,11 @@
   </div>
        <!-- fine seconda parte main statico -->
        <!-- inizio terza parte main statico -->
-      <div class="container ms_padding-80">
-          <div class="ms_container-third">
-              <div class="text-third-part">
-                <p>Find a freshly baked product perfect for you</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ut inventore et porro at consequatur praesentium corporis veritatis delectus culpa quo nesciunt, fuga maiores libero voluptates nulla rerum. Accusamus, ut?</p>
+      <div class="container my-5">
+          <div class="ms_container">
+              <div class="text-third-part text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                <span>Find a freshly baked product perfect for you</span>
+                <p>Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugat placerat. Sed ac nulla id orci tempor convallis sed</p>
                 <button>Shop All Product</button>
               </div>
 
@@ -58,14 +58,19 @@
       <div class="ms_container-80 background-img-bread mb-3 mt-5 p-5">
         <div class="top-text-01">
           <div class="text-left">
-            <p>Tell us what you have in ming</p>
+            <p>Tell us what you have in <br> ming</p>
           </div>
           <div class="text-right">
             <span>01</span>
           </div>
         </div>
-        <div class="text-bottom-right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quam eius qui iure corporis placeat nesciunt dicta minima, ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.</p>
+        <div class="text-bottom-right pt-5">
+          <span class="pb-4">MANUAL INGREDIENT SELECTION</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quam eius qui iure corporis placeat nesciunt dicta minima, 
+            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.
+            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.
+            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.
+            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.</p>
         </div>
         <!-- fine quarta parte main statico -->
 
@@ -75,22 +80,23 @@
             <div class="img-left-quinta-parte background-img-bread-3 h-100 p-5">
                 <div class="top-text-01">
                   <div class="text-left">
-                    <p>Tell us what you have in ming</p>
+                    <p>We Start Baking</p>
                   </div>
                   <div class="text-right">
                     <span>02</span>
                   </div>
                </div>
                 <div class="text-bottom-left w-50">
-                  <span>wewe</span>
+                  <span>Sweet & Delicious</span>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dolorem nam quas autem nesciunt molestias cumque itaque illum corrupti odio aliquid quam atque, unde veritatis laborum dolore suscipit recusandae porro?</p>
                 </div>
             </div>
             <div class="testo-right-quinta-parte h-100 p-5">
-              <div class="h-100 d-flex  flex-column justify-content-center">
-                <span>wewe</span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia eum non eveniet cum debitis delectus consequuntur amet! Quisquam numquam eius odio beatae facilis accusantium possimus, libero corporis voluptatum, repellat porro?</p>
-                <span>wewe</span>
+              <div class="h-100 d-flex  flex-column justify-content-center px-5">
+                <span class="pb-5">DONT JUST TAKE OUR WORD FOR IT</span>
+                <p>"Fynally found an alternative to the mass produced products. Somethings that incorporates real organic ingredients, nutrient dense 
+                  wellness while promoting sustainability and activity"</p>
+                <span class="pt-5">Rachel Cooper, Founder</span>
               </div>
             </div>
           </div>
@@ -99,14 +105,14 @@
           <div class="ms_container-80 background-img-bread-2 p-5 text-white">
                <div class="top-text-01">
                   <div class="text-left">
-                    <p>Tell us what you have in ming</p>
+                    <p>Delivered To Your Home</p>
                   </div>
                   <div class="text-right">
-                    <span>02</span>
+                    <span>03</span>
                   </div>
                </div>
                 <div class="text-bottom-left w-50">
-                  <span>wewe</span>
+                  <span>BAKED TO ORDER & GIFT WRAPPED</span>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dolorem nam quas autem nesciunt molestias cumque itaque illum corrupti odio aliquid quam atque, unde veritatis laborum dolore suscipit recusandae porro?</p>
                 </div>
           </div>
@@ -114,44 +120,46 @@
           <!-- inizio settima parte main statico -->
           <div class="ms_container-80-2 text-center mt-5 py-5">
             <span>LOCATIONS</span>
-            <p class="pt-5">Visit our Bakeries</p>
+            <h3 class="pt-5 ms_style-h">Visit our Bakeries</h3>
             <div class="ms_container">
               <div class="img-left">
                 <img class="w-100" src="../assets/pexels-daria-shevtsova-1070946.jpg" alt="">
-                <p class="py-4">New York</p>
-                <div class="px-5 w-100 d-flex align-items-center justify-content-between" >
-                  <div>
-                    <span>wewe</span>
-                    <p>wewe</p>
-                  </div>
-                  <div>
-                    <span>wewe</span>
-                    <p>wewe</p>
-                  </div>
-                  <div>
-                    <span>wewe</span>
-                    <p>wewe</p>
-                  </div>
+                <div class="ms_background-grey">
+                  <h3 class="py-4 ms_style-h">New York</h3>
+                    <div class="px-5 w-100 d-flex align-items-center justify-content-between" >
+                      <div>
+                        <span>CALL US</span>
+                        <p>1.800.458.556</p>
+                      </div>
+                      <div>
+                        <span>OPEN ALL WEEK</span>
+                        <p>9.00 AM - 6:00 pm</p>
+                      </div>
+                      <div>
+                        <button>View Map</button>
+                      </div>
+                </div>
                 </div>
 
                 </div>
                 <div class="img-right">
-                  <img class="w-100" src="../assets/pexels-annam-w-1047458.jpg" alt="">
-                   <p class="py-4">New York</p>
-                <div class="px-5 w-100 d-flex align-items-center justify-content-between" >
-                    <div>
-                      <span>wewe</span>
-                      <p>wewe</p>
-                    </div>
-                    <div>
-                      <span>wewe</span>
-                      <p>wewe</p>
-                    </div>
-                    <div>
-                      <span>wewe</span>
-                      <p>wewe</p>
-                    </div>
-                </div>
+                      <img class="w-100" src="../assets/pexels-annam-w-1047458.jpg" alt="">
+                      <div class="ms_background-yellow">
+                              <h3 class="py-4 ms_style-h">London</h3>
+                          <div class="px-5 w-100 d-flex align-items-center justify-content-between" >
+                              <div>
+                                <span>CALL US</span>
+                                <p>1.800.458.556</p>
+                              </div>
+                              <div>
+                                <span>OPEN ALL WEEK</span>
+                                <p>9.00 AM - 6:00 pm</p>
+                              </div>
+                              <div>
+                                <button>View Map</button>
+                              </div>
+                          </div>
+                      </div>
                 </div>
             </div>
 
@@ -165,9 +173,9 @@
 
               </div>
               <div class="ms_float-46 d-flex flex-column justify-content-center align-items-center">
-                <span></span>
-                <p>wewe</p>
-                <button></button>
+                <span class="pb-3">MADE FOR SHARING</span>
+                <h3 class="ms_style-h pb-3">Let's stay in touch</h3>
+                <button>Follow us</button>
 
               </div>
               <div class="ms_float-23">
@@ -193,10 +201,12 @@
           <!-- fine ottava parte main statico -->
           <!-- inizio nona parte main statico -->
           <div class="background-img-bread-3 mt-5 mb-5">
-            <div class="w-50 h-100 d-flex flex-column justify-content-center align-items-center">
-              <span>wewe</span>
-              <p>wewe</p>
-              <button>wewe</button>
+            <div class="container h-100">
+                  <div class="w-50 h-100 d-flex flex-column justify-content-center align-items-start">
+                      <span class="pb-3">TRY OUR SEASONAL PRODUCTS</span>
+                      <p class="ms_style-h text-white pb-3">Order for pick-up or delivery to <br> your home</p>
+                      <button class="ms_button-white">Shop Now</button>
+                </div>
             </div>
           </div>
           <!-- fine nona parte main statico -->
@@ -278,31 +288,35 @@ export default {
 
 
     /*inizio terza parte del main in maniera statica */
-    .ms_padding-80{
-      padding: 80px 0px;
-    }
-    .ms_container-third{
-    height: 350px!important;
     .text-third-part{
-      width: calc(100% / 5);
+      width: calc(100% / 4);
+      height: 300px!important;
       float: left;
         button{
-             padding: 10px 32px;
+             padding: 5px 15px;
              background-color: $colorTitolo;
              border: 1px solid white;
              border-radius: 8px;
              font-size: 20px;
              color: white;   
         }
+        p{
+          color: $colorParagrafi;
+        }
+        span{
+          color: $colorTitolo;
+          font-weight: bold;
+          font-size: 30px;
+        }
     }
     .img-third-part{
-      width: calc(100% / 5);
+      width: calc(100% / 6);
       float: left;
       img{
         object-fit: contain;
       }      
     }
-  }
+  
 
 
     /*fine terza parte del main in maniera statica */
@@ -319,20 +333,40 @@ export default {
           width: 50%;
           text-align: left;
           padding-left: 10px;
+          p{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+          }
         }
         .text-right{
           float: right;
           width: 10%;
           text-align: left;
           padding-right: 10px;
+          span{
+            font-size: 50px;
+            color: white;
+            font-weight: 200;
+          }
         }
     }
     .text-bottom-right{
       width: 50%;
       float: right;
       display: flex;
-      align-items: end;
+      flex-direction: column;
+      justify-content: center;
       height: 80%;
+      span{
+        font-size: 13px;
+        color: $colorParagrafi;
+        font-weight: bold;
+      }
+      p{
+        color: white;
+        font-weight: bold 700;
+      }
     }
 
     /* fine quarta parte main statica */
@@ -342,36 +376,68 @@ export default {
       width: 49%;
       height: 90%;
     }
-    .testo-right-quinta-parte{
-      float: right;
-      width: 49%;
-      height: 90%;
-    }
     .text-bottom-left{
       height: 80%;
       display: flex;
       justify-content: flex-end;
       flex-direction: column;
+
+      p{
+        color: white;
+        font-weight: bold 700;        
+      }
     }
+     span{
+        font-size: 10px;
+        color: $colorParagrafi;
+        font-weight: bold;        
+      }
 
     .testo-right-quinta-parte{
+      float: right;
+      width: 49%;
+      height: 90%;
       background-color: rgb(238, 231, 231);
       p{
         color: $colorTitolo;
-        font-size: 25px;
+        font-size: 27px;
+        font-weight: bold;
       }
     }
 
      /* fine quinta parte main statica */
 
      /* inizio settima parte main statica */
+      
      .img-left{
        width: 50%;
        float: left;
+       button{
+         color: $colorTitolo;
+         background-color: white;
+         border: 1px solid white;
+         border-radius: 5px;
+         padding: 5px 10px;
+       }
+       p{
+         color: $colorParagrafi;
+         font-size: 13px;         
+       }
      }
      .img-right{
        width: 50%;
        float: left;
+        button{
+          color: $colorTitolo;
+          background-color: white;
+          border: 1px solid white;
+          border-radius: 5px;
+          padding: 5px 10px;
+        }
+        p{
+         color: $colorParagrafi;
+         font-size: 13px;         
+       }
      }
      /* fine settima parte main statica */
      /* inizio ottava parte main statico */
@@ -387,6 +453,14 @@ export default {
        float: left;
        background-color: rgb(238, 231, 231);
        height: 96%;
+       button{
+              padding: 5px 15px;
+              background-color: $colorTitolo;
+              border: 1px solid white;
+              border-radius: 8px;
+              font-size: 20px;
+              color: white;  
+      }
      }
      .img-top-part{
        height: 250px;
@@ -437,4 +511,23 @@ export default {
     background-position: bottom;
     height: 400px;
   }
+  .ms_background-grey{
+      background-color: rgb(238, 231, 231);
+  }
+  .ms_background-yellow{
+    background-color: rgba(235, 235, 159, 0.5);
+  }
+  .ms_style-h{
+  color: $colorTitolo;
+  font-size: 27px;
+  font-weight: bold;
+ }
+ .ms_button-white{
+   padding: 5px 15px;
+   background-color: white;
+   border: 1px solid white;
+   border-radius: 8px;
+   font-size: 15px;
+   color: $colorTitolo;     
+ }
 </style>
