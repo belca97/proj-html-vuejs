@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-@import './src/assets/generals.scss'
+@import " ~@fortawesome/fontawesome-free/css/all.css";
+@import './src/assets/generals.scss';
 
 </style>

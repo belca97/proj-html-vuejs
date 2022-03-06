@@ -4,14 +4,16 @@
         <!-- creazione menu con logo a sinistra e menu a destra -->
         <div class="ms_container">
             <div class="logo-header">
-                <img class="h-100 w-100" src="../assets/bakery-logo.jpg" alt="">
-                
+                <div class="box-logo">
+                    <span class="logo">Bakery</span>
+                    <span class="logo-bottom">AVADA - SHOP</span>
+                </div>                
             </div>
             <div class="menu-header">
                 <ul>
                     <!-- creo il menu in alto a destra in maniera dinamica creando un array di oggetti nello script da dove ricavare informazioni di testo -->
                     <li v-for='(testo, index) in TestiHeader' :key="index"><a href="">{{testo.text}}</a></li>
-                    <li><a href=""></a></li>
+                    <li><a href=""></a><i class="fas fa-shopping-cart"></i></li>
                 </ul>
             </div>
 
@@ -25,7 +27,15 @@
                 <button>Explore our product</button>
             </div>
              <div class="right-jumbotron">
-
+                 <div class="ms_demos">
+                     <i class="fab fa-apple"></i>                    
+                     <span>Demos</span>
+                 </div>
+                 <div class="ms_sale">
+                     <div class="ms_dollar">$</div>
+                     <div class="ms_price">39</div>
+                     <span>On Sale</span>
+                 </div>
             </div>
 
         </div>
@@ -87,6 +97,9 @@ header{
                         float: left;
                         width: 15%;
                         height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                     .menu-header{
                         float: right;
@@ -142,13 +155,59 @@ header{
                         }
                 }
                 .right-jumbotron{
-                    width: 77%;
+                    width: 74%;
                     float: right;
                     background-image: url('../assets/pexels-maria-orlova-4916562.jpg');
                     background-size: cover;
                     background-position: bottom;
                     height: 100%;
                     border-radius: 10px;
+                    position: relative;                    
+                    .ms_demos{
+                        position: absolute;
+                        background-color: white;
+                        width: 70px;
+                        height: 70px;
+                        top: 5%;
+                        right: 1%;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        font-size: 13px;
+                        i{
+                            font-size: 30px;
+                        }
+                    }
+                    .ms_sale{
+                        position: absolute;
+                        background-color: white;
+                        width: 70px;
+                        height: 70px;
+                        top: 18%;
+                        right: 1%;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        font-size: 13px;
+                        .ms_dollar{
+                            position: absolute;
+                            left: 20%;
+                            top: 10%;
+                            font-size: 20px;
+                            color: rgb(82, 209, 124);
+                            font-weight: bold;
+                        }
+                        .ms_price{
+                            font-size: 20px;
+                            color: rgb(82, 209, 124);
+                            font-weight: bold;    
+                            padding-left: 10px;                        
+                        }
+                    }
                 }
             }
 }
@@ -166,5 +225,22 @@ header{
      clear: both;
  }
 
+ .box-logo{
+      position: relative;
+      height: 90%;
+            .logo{
+            font-family: 'Lora', serif;
+            font-size: 40px;
+            font-style: italic;
+            color: $colorTitolo;
+          }
+          .logo-bottom{
+            font-size: 10px;
+            position: absolute;
+            top: 52%;
+            left: 21%;
+            color: $colorTitolo;
+          }
+    }
 
 </style>
