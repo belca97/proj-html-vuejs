@@ -29,8 +29,8 @@
                     <span>03</span>
                   </div>
                </div>
-                <div class="text-bottom-left w-50">
-                  <span>BAKED TO ORDER & GIFT WRAPPED</span>
+                <div class="text-bottom-left h-75 w-50">
+                  <span class="pb-3">BAKED TO ORDER & GIFT WRAPPED</span>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dolorem nam quas autem nesciunt molestias cumque itaque illum corrupti odio aliquid quam atque, unde veritatis laborum dolore suscipit recusandae porro?</p>
                 </div>
           </div>
@@ -173,8 +173,46 @@ export default {
 
    /*fine seconda parte del main in maniera statica */
 
+   /* inizio sesta parte del main */
+   
 
-     /* fine quinta parte main statica */
+  .top-text-01::after{
+      clear: both;
+      content: '';
+      display: table;
+    }
+    .top-text-01{
+      height: 100px;
+        .text-left{
+          float: left;
+          width: 50%;
+          text-align: left;
+          padding-left: 10px;
+          p{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+        .text-right{
+          float: right;
+          width: 10%;
+          text-align: left;
+          padding-right: 10px;
+          span{
+            font-size: 50px;
+            color: white;
+            font-weight: 200;
+          }
+        }
+    }
+    .text-bottom-left{
+          display: flex;
+          flex-direction: column;
+          justify-content: end;          
+        }
+
+    /* inizio sesta parte del main */
 
      /* inizio settima parte main statica */
       
@@ -192,12 +230,12 @@ export default {
          color: $colorParagrafi;
          font-size: 13px;         
        }
-       span{
+     }
+     span{
         font-size: 10px;
         color: $colorParagrafi;
         font-weight: bold;        
       }
-     }
      .img-right{
        width: 50%;
        float: left;
