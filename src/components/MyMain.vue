@@ -1,28 +1,6 @@
 <template>
   <main>
-    <div class="container ms_container">
-      <!-- inizio prima parte main in maniera statica -->
-          <div class="text-first-part p-3">
-            <span>OUR PRODUCT</span>
-            <p>All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients</p>
-            <button>Star shopping</button>
-
-          </div>
-          <div class="img-center-first-part">
-            <img src="../assets/pexels-diana-akhmetianova-7296682.jpg" alt="">
-            <div class="ms_prev">
-              <i class="fas fa-angle-left"></i>
-            </div>
-          </div>
-          <div class="img-right-first-part">
-              <img src="../assets/pexels-diana-akhmetianova-7296683.jpg" alt="">
-              <div class="ms_next">
-                <i class="fas fa-angle-right"></i>
-              </div>
-          </div>
-
-    </div>
-    <!-- fine prima parte main statico -->
+    <ComponentMainFirst></ComponentMainFirst>
       <!-- inizio seconda parte main in maniera statica -->
   <div class="container ms_container mt-5">
         <div class="text-center text-second-part">
@@ -33,99 +11,13 @@
   </div>
        <!-- fine seconda parte main statico -->
        <!-- inizio terza parte main statico -->
-      <div class="container my-5">
-          <div class="ms_container-third">
-              <div class="text-third-part text-center d-flex flex-column justify-content-center  align-items-center">
-                <span class="pb-3">Find a freshly baked product perfect for you</span>
-                <p>Integer a nibh vitae ex porttitor rutrum <br> et ut velit. Etiam ac felis at leo feugat placerat. Sed ac nulla id orci tempor convallis sed</p>
-                <button>Shop All Product</button>
-              </div>
-              <div class="img-third-part">
-                <img class="w-100" src="../assets/img-terza-parte/pexels-clem-onojeghuo-375904.jpg" alt="">
-                  <div class="ms_prev">
-                      <i class="fas fa-angle-left"></i>
-                  </div>
-                  <div class="text-center pt-2">
-                    <p>A Lot Of Cookies</p>
-                    <span>$19.00-$39.00</span>
-                  </div>                
-              </div>
-
-              <div class="img-third-part">
-                <img class="w-100" src="../assets/img-terza-parte/pexels-ylanite-koppens-2014693.jpg" alt="">
-                <div class="text-center pt-2">
-                    <p>Perfect Macarons</p>
-                    <span>$24.00-$62.00</span>
-                </div>       
-              </div>
-              
-              <div class="img-third-part">
-                <img class="w-100" src="../assets/img-terza-parte/pexels-pixabay-269235.jpg" alt="">
-                <div class="text-center pt-2">
-                    <p>Strawberry Donut</p>
-                    <span>$24.00-$42.00</span>
-                 </div>       
-              </div>
-              
-              <div class="img-third-part">
-                <img class="w-100" src="../assets/img-terza-parte/pexels-istvan-szabo-10338830.jpg" alt="">
-                    <div class="ms_next">
-                        <i class="fas fa-angle-right"></i>
-                    </div> 
-                    <div class="text-center pt-2">
-                      <p>Heart Biscuits</p>
-                      <span>$18.00-$52.00</span>
-                  </div>      
-              </div>
-          </div>
-      </div>
+       <ComponentMainThird/> 
       <!-- fine terza parte main statico -->
       <!-- inizio quarta parte main statico -->
-      <div class="ms_container-80 background-img-bread mb-3 mt-5 p-5">
-        <div class="top-text-01">
-          <div class="text-left">
-            <p>Tell us what you have in <br> ming</p>
-          </div>
-          <div class="text-right">
-            <span>01</span>
-          </div>
-        </div>
-        <div class="text-bottom-right pt-5">
-          <span class="pb-4">MANUAL INGREDIENT SELECTION</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quam eius qui iure corporis placeat nesciunt dicta minima, 
-            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.
-            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.
-            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.
-            ducimus et quisquam recusandae doloribus atque praesentium at ipsam inventore iste optio.</p>
-        </div>
+      <ComponentMainFourth/>
         <!-- fine quarta parte main statico -->
-
-          </div>
             <!-- inizio quinta parte main statico -->
-          <div class="ms_container-80 ms_container mb-3">
-            <div class="img-left-quinta-parte background-img-bread-3 h-100 p-5">
-                <div class="top-text-01">
-                  <div class="text-left">
-                    <p>We Start Baking</p>
-                  </div>
-                  <div class="text-right">
-                    <span>02</span>
-                  </div>
-               </div>
-                <div class="text-bottom-left w-50">
-                  <span>Sweet & Delicious</span>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dolorem nam quas autem nesciunt molestias cumque itaque illum corrupti odio aliquid quam atque, unde veritatis laborum dolore suscipit recusandae porro?</p>
-                </div>
-            </div>
-            <div class="testo-right-quinta-parte h-100 p-5">
-              <div class="h-100 d-flex  flex-column justify-content-center px-5">
-                <span class="pb-5">DONT JUST TAKE OUR WORD FOR IT</span>
-                <p>"Fynally found an alternative to the mass produced products. Somethings that incorporates real organic ingredients, nutrient dense 
-                  wellness while promoting sustainability and activity"</p>
-                <span class="pt-5">Rachel Cooper, Founder</span>
-              </div>
-            </div>
-          </div>
+      <ComponentMainFifth/>
               <!--fine quinta parte main statico -->
               <!-- inizio sesta parte main statico -->
           <div class="ms_container-80 background-img-bread-2 p-5 text-white">
@@ -241,9 +133,21 @@
 </template>
 
 <script>
+import ComponentMainFirst from './partials/ComponentMainFirst.vue'
+import ComponentMainThird from './partials/ComponentMainThird.vue'
+import ComponentMainFourth from './partials/ComponentMainFourth.vue'
+import ComponentMainFifth from './partials/ComponentMainFifth.vue'
 export default {
     name:'MyMain',
+    components : {
+      ComponentMainFirst,
+      ComponentMainThird,
+      ComponentMainFourth,
+      ComponentMainFifth,
+  }
 }
+
+
 </script>
 
 <style scoped lang='scss'>
@@ -251,80 +155,7 @@ export default {
   @import '../assets/variabili.scss';
   main{
     margin-top: 100px;
-    /*inizio prima parte del main in maniera statica */
-    .text-first-part{
-        float: left;
-        width: calc(100% / 3 - 30px);
-        height: 400px;
-        button{
-             padding: 10px 32px;
-             background-color: $colorTitolo;
-             border: 1px solid white;
-             border-radius: 8px;
-             font-size: 20px;
-             color: white;          
-        }
-        p{
-          color: $colorTitolo;
-          font-size: 30px;
-          margin: 40px 0px;
-        }
-        span{
-          color: $colorTitolo;
-          font-size: 10px;
-        }
     }
-    .img-center-first-part{
-        float: left;
-        width: calc(100% / 3 - 10px);
-        height: 600px;
-        position: relative;
-        img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        .ms_prev{
-          position: absolute;
-          top: 45%;
-          background-color: $colorParagrafi;   
-          width: 35px;
-          height: 60px;
-          color: white;
-          font-size: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-    }
-    .img-right-first-part{
-        float: right;
-        width: calc(100% / 3 - 10px);
-        height: 600px;
-        position: relative;
-        img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        .ms_next{
-          position: absolute;
-          top: 45%;
-          right: 0%;
-          background-color: $colorParagrafi;   
-          width: 35px;
-          height: 60px;
-          color: white;
-          font-size: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;          
-        }
-    }
-  }
-      /*fine prima parte del main in maniera statica */
-
-
     /*inizio seconda parte del main in maniera statica */
 
   .text-second-part{
@@ -340,166 +171,8 @@ export default {
     }
   }
 
-
-
    /*fine seconda parte del main in maniera statica */
 
-
-    /*inizio terza parte del main in maniera statica */
-    .ms_container-third{
-      height: 400px;
-    }
-    .text-third-part{
-      width: 28%;
-      float: left;
-      height: 80%;
-      padding: 20px;
-        button{
-             padding: 5px 15px;
-             background-color: $colorTitolo;
-             border: 1px solid white;
-             border-radius: 8px;
-             font-size: 20px;
-             color: white;   
-        }
-        p{
-          color: $colorParagrafi;
-        }
-        span{
-          color: $colorTitolo;
-          font-weight: bold;
-          font-size: 30px;
-        }
-    }
-    .img-third-part{
-      width: calc(72% / 4 - 16px);
-      float: left;
-      height: 100%;
-      margin: 0px 8px;
-      position: relative;
-      p{
-        font-weight: bold;
-        color: $colorTitolo;
-      }
-      img{
-        object-fit: cover;
-        object-position: -5rem;
-        height: 80%;
-      }
-      .ms_next{
-          position: absolute;
-          top: 35%;
-          right: 0%;
-          background-color: $colorParagrafi;   
-          width: 35px;
-          height: 60px;
-          color: white;
-          font-size: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;          
-        }
-        .ms_prev{
-          position: absolute;
-          top: 35%;
-          background-color: $colorParagrafi;   
-          width: 35px;
-          height: 60px;
-          color: white;
-          font-size: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }         
-    }
-  
-
-
-    /*fine terza parte del main in maniera statica */
-    /* inizio quarta parte main statica */
-        .top-text-01::after{
-      clear: both;
-      content: '';
-      display: table;
-    }
-    .top-text-01{
-      height: 100px;
-        .text-left{
-          float: left;
-          width: 50%;
-          text-align: left;
-          padding-left: 10px;
-          p{
-            color: white;
-            font-size: 30px;
-            font-weight: bold;
-          }
-        }
-        .text-right{
-          float: right;
-          width: 10%;
-          text-align: left;
-          padding-right: 10px;
-          span{
-            font-size: 50px;
-            color: white;
-            font-weight: 200;
-          }
-        }
-    }
-    .text-bottom-right{
-      width: 50%;
-      float: right;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 80%;
-      span{
-        font-size: 13px;
-        color: $colorParagrafi;
-        font-weight: bold;
-      }
-      p{
-        color: white;
-        font-weight: bold 700;
-      }
-    }
-
-    /* fine quarta parte main statica */
-    /* inizio quinta parte main statica */
-    .img-left-quinta-parte{
-      float: left;
-      width: 49%;
-      height: 90%;
-    }
-    .text-bottom-left{
-      height: 80%;
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: column;
-
-      p{
-        color: white;
-        font-weight: bold 700;        
-      }
-    }
-     span{
-        font-size: 10px;
-        color: $colorParagrafi;
-        font-weight: bold;        
-      }
-
-    .testo-right-quinta-parte{
-      float: right;
-      width: 49%;
-      height: 90%;
-      background-color: rgb(238, 231, 231);
-      p{
-        color: $colorTitolo;
-        font-size: 27px;
-        font-weight: bold;
-      }
-    }
 
      /* fine quinta parte main statica */
 
@@ -519,6 +192,11 @@ export default {
          color: $colorParagrafi;
          font-size: 13px;         
        }
+       span{
+        font-size: 10px;
+        color: $colorParagrafi;
+        font-weight: bold;        
+      }
      }
      .img-right{
        width: 50%;
@@ -534,6 +212,11 @@ export default {
          color: $colorParagrafi;
          font-size: 13px;         
        }
+       span{
+        font-size: 10px;
+        color: $colorParagrafi;
+        font-weight: bold;        
+      }
      }
      /* fine settima parte main statica */
      /* inizio ottava parte main statico */
@@ -560,6 +243,11 @@ export default {
      }
      .img-top-part{
        height: 250px;
+       span{
+        font-size: 10px;
+        color: $colorParagrafi;
+        font-weight: bold;        
+      }
      }
 
      /* fine ottava parte main statico */
@@ -593,11 +281,6 @@ export default {
   }
   .background-img-bread-2{
     background-image: url('../assets/pexels-pixabay-209196.jpg');
-    background-size: cover;
-    background-position-y: -7em;
-  }
-  .background-img-bread-3{
-    background-image: url('../assets/pexels-antoni-shkraba-5852247.jpg');
     background-size: cover;
     background-position-y: -7em;
   }
