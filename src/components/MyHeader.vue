@@ -9,12 +9,14 @@
                     <span class="logo-bottom">AVADA - SHOP</span>
                 </div>                
             </div>
-            <div class="menu-header">
+            <div class="menu-header px-4">
                 <ul>
                     <!-- creo il menu in alto a destra in maniera dinamica creando un array di oggetti nello script da dove ricavare informazioni di testo -->
-                    <li v-for='(testo, index) in TestiHeader' :key="index"><a href="">{{testo.text}}</a></li>
-                    <li><a href=""></a><i class="fas fa-shopping-cart"></i></li>
+                    <MenuHeader v-for='(testo, index) in TestiHeader' :key="index"
+                    :text="testo.text"/>
+                    <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
+
             </div>
 
         </div>
@@ -44,15 +46,19 @@
 </template>
 
 <script>
+import MenuHeader from './partials/MenuHeader.vue'
 export default {
     name:'MyHeader',
+    components: {
+        MenuHeader
+    },
     data (){
         return{
 
             //array di oggetti per il menu dell'header
 
 
-            TestiHeader : [
+              TestiHeader : [
               {
                 text : 'HOME'
               },
@@ -89,7 +95,7 @@ export default {
 
 header{
     height: 700px;
-    background-color: $colorJubmtronHeader;
+    background-color: $colorJumbotronHeader;
 
             .ms_container{
                 height: 100px;
@@ -108,19 +114,9 @@ header{
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
-
                         ul li{
                             list-style: none;
                             display: inline;
-                            margin: 0px 20px;
-                                a{
-                                    text-decoration: none;
-                                    color: $colorMenuHeader;
-                                    padding-bottom: 5px ;
-                                    font-weight: bold;
-                                    
-                                }
-                                
                         }
                     }
             }
@@ -216,9 +212,6 @@ header{
     clear: both;
     content: '';
 }
-  a:hover{
-       border-bottom: 2px solid $colorMenuHeader;
- }
  .ms-jumbotron::after{
      display: table;
      content: '';

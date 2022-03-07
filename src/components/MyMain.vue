@@ -40,7 +40,6 @@
                 <p>Integer a nibh vitae ex porttitor rutrum <br> et ut velit. Etiam ac felis at leo feugat placerat. Sed ac nulla id orci tempor convallis sed</p>
                 <button>Shop All Product</button>
               </div>
-
               <div class="img-third-part">
                 <img class="w-100" src="../assets/img-terza-parte/pexels-clem-onojeghuo-375904.jpg" alt="">
                   <div class="ms_prev">
@@ -243,7 +242,7 @@
 
 <script>
 export default {
-    name:'MyMain'
+    name:'MyMain',
 }
 </script>
 

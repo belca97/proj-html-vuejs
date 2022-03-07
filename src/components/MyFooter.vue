@@ -8,7 +8,9 @@
             <span class="logo-bottom">AVADA - SHOP</span>
         </div>
         <ul class="pb-5">
-          <li v-for="(testo, index) in TestiFooter" :key="index"><a href=""></a>{{testo.text}}</li>
+          <!-- Menu footer tramite componente esterno -->
+          <MenuFooter v-for="(testo, index) in TestiFooter" :key="index"
+          :text='testo.text'/>
           <li><a href=""></a><i class="fas fa-shopping-cart"></i><span class="ms_number-footer">0</span></li>
         </ul>
         <p>@ Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved</p>
@@ -21,10 +23,9 @@
         </div>
         <div class="icons">
           <ul>
-            <li><a href=""></a><i class="fab fa-instagram"></i></li>
-            <li><a href=""></a><i class="fab fa-twitter"></i></li>
-            <li><a href=""></a><i class="fab fa-facebook-f"></i></li>
-            <li><a href=""></a><i class="fab fa-pinterest-p"></i></li>
+            <!-- Icone footer tramite componente esterno -->
+            <IconeFooter v-for="(icona, index) in Icone" :key="index"
+            :ClasseIcone="icona.text"/>
           </ul>
         </div>
         <div class="arrow">
@@ -40,12 +41,18 @@
 </template>
 
 <script>
+import MenuFooter from './partials/MenuFooter.vue'
+import IconeFooter from './partials/IconeFooter.vue'
 export default {
     name: 'MyFooter',
+    components:{
+      MenuFooter,
+      IconeFooter
+    },
     data (){
         return{
 
-            //array di oggetti per il menu dell'header
+            //array di oggetti per il menu del footer
 
 
             TestiFooter : [
@@ -71,6 +78,20 @@ export default {
                 text : 'Orders'
               }
             ],
+            Icone : [
+              {
+                text : 'fa-instagram'
+              },
+              {
+                text : 'fa-twitter'
+              },
+              {
+                text : 'fa-facebook-f'
+              },
+              {
+                text : 'fa-pinterest-p'
+              },              
+            ]
       }
     }
 }
